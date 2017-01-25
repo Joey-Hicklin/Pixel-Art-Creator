@@ -1,0 +1,107 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+form{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+form input{
+	font-size: 18px;
+	font-weight: bold;
+}
+.pixel{
+	width: 18px;
+	height: 18px;
+	background-color: rgba(255,255,255,0);
+	float: left;
+	border: 1px solid rgba(255,255,255,0);
+}
+.pixel:hover{
+	border: 1px solid rgba(0,0,0,1);
+}
+nav{
+	position: absolute;
+	font-size: 16px;
+	background-color: #f4f4f4;
+	text-align:center;
+}
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+nav ul li{
+	width: 140px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	cursor: pointer;
+}
+nav ul li:hover:nth-child(1){
+	background-color: rgba(0,0,255,1);
+	color: rgb(255,255,255);
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+nav ul li:hover:nth-child(2), .RED{
+	background-color: rgba(255,0,0,1);
+	color: rgb(255,255,255);
+}
+nav ul li:hover:nth-child(3), .YELLOW{
+	background-color: rgba(255,255,0,1);
+	color: rgb(0,0,0);
+}
+nav ul li:hover:nth-child(4), .GREEN{
+	background-color: rgba(0,255,0,1);
+	color: rgb(0,0,0);
+}
+nav ul li:hover:nth-child(5), .PURPLE{
+	background-color: rgba(128,0,128,1);
+	color: rgb(255,255,255);
+}
+nav ul li:hover:nth-child(6), .ORANGE{
+	background-color: rgba(255,165,0,1);
+	color: rgb(0,0,0);
+}
+nav ul li:hover:nth-child(7), .BROWN{
+	background-color: rgba(101,67,33,1);
+	color: rgb(255,255,255);
+}
+nav ul li:hover:nth-child(8), .WHITE{
+	background-color: rgba(255,255,255,1);
+	color: rgb(0,0,0);
+}
+nav ul li:hover:nth-child(9), .LIGHT{
+	background-color: rgba(192,192,192,1);
+	color: rgb(0,0,0);
+}
+nav ul li:hover:nth-child(10), .MED{
+	background-color: rgba(105,105,105,1);
+	color: rgb(255,255,255);
+}
+nav ul li:hover:nth-child(11), .DARK{
+	background-color: rgba(43,43,43,1);
+	color: rgb(255,255,255);
+}
+nav ul li:hover:nth-child(12), .BLACK{
+	background-color: rgba(0,0,0,1);
+	color: rgb(255,255,255);
+}
+nav ul li:hover:nth-child(13), .FLESH{
+	background-color: rgba(217,187,123,1);
+	color: rgb(0,0,0);
+}
+nav ul li:hover:nth-child(14){
+	background-color: rgba(85,170,255,1);
+	color: rgb(0,0,0);
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.BLUE{
+	background-color: rgba(0,0,255,1);
+}
+.SKY{
+	background-color: rgba(85,170,255,1);
+}
