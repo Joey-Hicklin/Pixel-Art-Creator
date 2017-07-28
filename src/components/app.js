@@ -6,6 +6,7 @@ import ContextMenu from './contextMenu';
 let pixelCount = ((window.outerHeight-89)*window.outerWidth)/400;
 const makingSure = prompt("Do you really want to create " + pixelCount + " div elements?");
 let pixelContainer = [];
+console.log(ContextMenu.state.display);
 
 if(makingSure != null){
 	for (var i = 0; i < pixelCount; i++) {
