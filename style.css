@@ -105,3 +105,132 @@ nav ul li:hover:nth-child(14){
 .SKY{
 	background-color: rgba(85,170,255,1);
 }
+
+#magicChest {
+position: absolute;
+width: 6vw;
+z-index: 5; }
+
+#magicChest {
+bottom: 2.8vw;
+right: 6vw;
+display: none; }
+
+#magicChest:hover {
+cursor: pointer; }
+
+#magicChestContainer {
+border: 0.8vw solid darkgrey;
+font-family: "Press Start 2P","sans-serif";
+border-radius: 0.6vw;
+border-style: ridge;
+position: absolute;
+z-index: 6;
+display: none; }
+#magicChestContainer #magicChestContents {
+background-position: center;
+background-size: cover;
+min-height: 10vw;
+padding: 1vw 0vw;
+overflow: auto; }
+#magicChestContainer #magicChestContents {
+background-image: url("../img/purple-galaxy-texture.jpg");
+max-height: 30vw;
+width: 75vw;
+padding: 1vw; }
+#magicChestContainer #toyChestContents ol {
+list-style-type: none; }
+#magicChestContainer #toyChestContents ol li {
+list-style: none;
+margin-bottom: 2vw; }
+#magicChestContainer #toyChestContents a {
+color: white;
+text-decoration: none;
+padding: 1vw; }
+#magicChestContainer #toyChestContents a:hover {
+color: #ffd23a; }
+#magicChestContainer #toyChestTech {
+padding: 1vw;
+background-image: url("../img/red-felt-texture.jpg");
+background-position: center;
+background-size: cover;
+border-top: 0.6vw solid darkgrey;
+border-top-style: ridge;
+height: 6vw; }
+#magicChestContainer #toyChestTech .toyTechText {
+color: #757575;
+font-size: 1vw;
+text-align: center;
+display: block;
+margin-top: 2.5vw; }
+#magicChestContainer #toyChestTech .toyTech {
+width: 5vw;
+margin-bottom: 1vw;
+display: none; }
+
+#magicChestContainer {
+bottom: 21vh;
+right: 1vw; }
+
+#magicChestTitle {
+text-align: center;
+padding: 1vw;
+border-bottom: 0.6vw solid darkgrey;
+border-bottom-style: ridge; }
+
+#magicChestTitle {
+color: #990099;
+background-color: rgba(0, 0, 0, 0.97); }
+
+input[type=checkbox] {
+display: none; }
+
+ul {
+display: none;
+list-style-type: none; }
+ul li {
+margin-top: 1vw; }
+
+ol {
+list-style-type: none; }
+ol li {
+margin-top: 1vw; }
+
+input[type=checkbox]:checked ~ ul {
+display: block; }
+
+label {
+padding: 0.5vw; }
+
+label:hover {
+background-color: rgba(0, 0, 0, 0.5); }
+
+ol li label {
+color: #ff9900;
+font-size: 2vw; }
+
+ol li ul li label {
+color: #ffff00;
+font-size: 1.5vw; }
+
+ol li ul li ul li label {
+color: #009900;
+font-size: 1.25vw; }
+
+ol li ul li ul li ul li label {
+color: #0099cc;
+font-size: 1.12vw; }
+
+ol li ul li ul li ul li ul li label {
+color: #330099;
+font-size: 1.06vw; }
+
+li p {
+color: white;
+line-height: 1.4vw;
+padding: 1vw;
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 2vw; }
+li p a {
+text-decoration: none;
+color: #3e41cc; }

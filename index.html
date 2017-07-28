@@ -4,14 +4,115 @@
 	<meta charset="UTF-8">
 	<title>React Drawing App</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 <body>
 	<div id='app'> </div>
-	<form action="http://joeyhicklin.com/OpalReactstoJoey/templates" target="_blank">
+	<form action="http://joeyhicklin.com/pixelStudio/templates" target="_blank">
 		<input type="submit" value="Templates" />
 		<p>Left-click: Outline pixel</p>
 		<p>Right-click: Select color</p>
 	</form>
+	<img id="magicChest" src="magicChest.gif" />
+	<div id="magicChestContainer">
+		<div id="magicChestTitle">
+			Magical Chest
+		</div>
+		<div id="magicChestContents">
+			<ol>
+				<li>
+					<input type="checkbox" id="magicCheck1">
+				    <label for="magicCheck1">Inspirations</label>
+				    <ul>
+				        <li>
+				        	<input type="checkbox" id="magicCheck1-1">
+				    		<label for="magicCheck1-1">Pixel Art</label>
+				    		<ul>
+				    			<li>
+				    				<p>
+				    					I remembered a tutorial video I had watched years ago where the instructor made a 'painting' effect by listening for a mouseDown event and creating a 1px X 1px div element positioned at the mouse location whenever the mouse moved. I always thought the idea was really fun, so I wanted to try making my own version.<br><br>I also used to experiment with making pixel art when I was still in high school, so making a pixel art site seemed like a solid choice.
+			    					</p>
+			    				</li>
+		    				</ul>
+			    		</li>
+			    		<li>
+				        	<input type="checkbox" id="magicCheck1-2">
+				    		<label for="magicCheck1-2">React</label>
+				    		<ul>
+				    			<li>
+				    				<p>
+				    					I got an interview with a company interested in my experience with React. However, I hadn't built anything with React for a few months. So I decided to build something fun to refresh my memory on building with React, plus it would give me something to show my interviewer.
+			    					</p>
+			    				</li>
+		    				</ul>
+				        </li>
+				        <li>
+				        	<input type="checkbox" id="magicCheck1-3">
+				    		<label for="magicCheck1-3">Context Menu</label>
+				    		<ul>
+				    			<li>
+				    				<p>
+				    					I had never made a custom context menu before, and I really wanted to experiment with the process. So I had to come up with a purpose for the menu and the most practical thing I could come up with at the time was a color picker.<br><br>I really enjoyed building the menu! It taught me a lot about how to follow event targets and pass information around through seperated elements.
+			    					</p>
+			    				</li>
+		    				</ul>
+				        </li>
+				        <li>
+				        	<input type="checkbox" id="magicCheck1-4">
+				    		<label for="magicCheck1-4">Templates</label>
+				    		<ul>
+				    			<li>
+				    				<p>
+				    					After I finished building the tool, I found myself exploring the world of pixel art more and more. To incentivize others to follow along, I thought it would be fun to share some examples that you could recreate with my Pixel Studio tool.
+			    					</p>
+			    				</li>
+		    				</ul>
+				        </li>
+				    </ul>
+				</li>
+				<li>
+				    <input type="checkbox" id="magicCheck2">
+				    <label for="magicCheck2">Issues</label>
+				    <ul>
+				        <li>
+				        	<input type="checkbox" id="magicCheck2-1">
+				    		<label for="magicCheck2-1">Resizing</label>
+				    		<ul>
+				    			<li>
+				    				<p>
+				    					Because I just place all the divs next to each other as block elements, and I generate a number of divs as calculated by the viewer height and width upon initialization, that means that any resizing of the window results in the divs scattering about, losing any art that has been drawn on them.<br><br>My first thought was to size them according to viewer width, that way they would scale with the window. This fixed a bit of the problem, but the elements still lost some of their orientation as the window was resized.
+			    				</li>
+		    				</ul>
+			    		</li>
+			    		<li>
+				        	<input type="checkbox" id="magicCheck2-2">
+				    		<label for="magicCheck2-2">Color Tracking</label>
+				    		<ul>
+				    			<li>
+				    				<p>
+				    					After playng around with the finished product for a short while, I discovered that it would be far more productive to have a color selector that would change a left-click to then set a color, as opposed to the current solution of applying a color after a right-click and context menu selection.<br><br>However, this tool was really just built for me to experiment, and some day I may come back and build that tracking menu so it would work alongside the context menu.
+			    					</p>
+			    				</li>
+		    				</ul>
+				        </li>
+				        <li>
+				        	<input type="checkbox" id="magicCheck2-3">
+				    		<label for="magicCheck2-3">Random Clicks</label>
+				    		<ul>
+				    			<li>
+				    				<p>
+				    					When a user would right-click, it would create an event that would be waiting for the next click. However, if the next click was not a selection of a context menu item, or if it was a click somewhere random, the application would react in obscure ways (from the user's perspective). This issue gave me some great practice with being aware of the event lifecycle and managing listeners so the application reacts predictably.<br><br>After some additional code, I finally got the application in shape so that it reacted predictably regardless of random clicks!
+			    					</p>
+			    				</li>
+		    				</ul>
+				        </li>
+				    </ul>
+			    </li>
+		    </ol>
+		</div>
+	</div>
 	<script src="public/bundle.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="chest.js"></script>
 </body>
 </html>
