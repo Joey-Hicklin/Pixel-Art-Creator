@@ -21,7 +21,7 @@ export default class Pixel extends React.Component{
 			this.setState({
 				active: changeActive
 			});
-		} else {
+		} else if(menu.state.display === "block"){
 			menu.setState({
 				display: "none"
 			});
