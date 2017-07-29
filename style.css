@@ -211,10 +211,10 @@ background-color: rgba(0, 0, 0, 0.97); }
 input[type=checkbox] {
 display: none; }
 
-ul {
+label ~ ul {
 display: none;
 list-style-type: none; }
-ul li {
+label ~ ul li {
 margin-top: 1vw; }
 
 ol {
