@@ -1,17 +1,43 @@
+* {
+	box-sizing: border-box;
+}
 body{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Roboto', Arial, sans-serif;
 }
 form{
-	position: absolute;
-	left: 10px;
-	top: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	padding: 20px;
+	background-color: #65F3FC;
 }
 form input{
 	font-size: 18px;
 	font-weight: bold;
+	background-color: #0894AD;
+	border: none;
+	padding: 10px;
+	float: right;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
 }
+
+form p {
+	float: left;
+	margin: 0 20px;
+	text-align: center;
+}
+
+form img {
+	max-width: 40px;
+	display: block;
+	margin: auto;
+}
+
 .pixel{
 	width: 18px;
 	height: 18px;
